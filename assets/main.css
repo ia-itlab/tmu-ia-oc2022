@@ -348,7 +348,8 @@ section{
 
 
 p{
-	margin:1.5em 0;
+	font-size:0.875rem;
+	margin:2em 0;
 	
 }
 
@@ -491,7 +492,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	line-height: 3.5rem;
 	padding: 0 1.75rem;
 	vertical-align: middle;
-	font-family: 'Archivo', sans-serif;
 	letter-spacing: 0.025rem;
 	padding-left: calc(0.025rem + 1.75rem);
 	font-size: 0.875em;
@@ -1134,7 +1134,9 @@ hr.style1:before {
 	height: 100%;
   }
 
-
+.youtube+p{
+	margin-bottom:0;
+}
 /* Hero
 --------------------------------------------- */
 .hero {
@@ -1176,8 +1178,12 @@ hr.style1:before {
 
 footer{
 	width:100%;
-	height:120px;
-	background-color: #666;
+	text-align: center;
+}
+
+footer p{
+	font-size:0.75rem;
+	color:#666;
 }
 @media (max-width: 1920px) {
 	
