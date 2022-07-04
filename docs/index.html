@@ -24,12 +24,13 @@
 	<!--<meta property="fb:app_id" content="FBのapp_id">-->
 	<!-- ▼Twitter Cards Settings▼ -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@indiploma_">
+	<meta name="twitter:site" content="@ia_sd_tmu">
 	<!-- ▼icon-->
 	<link rel="shortcut icon" href="./images/favicon.ico">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<!--icon for mobile-->
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<script>
 		(function (d) {
@@ -40,6 +41,18 @@
 			},
 				h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
 		})(document);
+
+
+		$(window).on('scroll', function () {
+
+			var scrollTop = $(window).scrollTop();
+			var bgPosition = scrollTop / 2;
+
+			if (bgPosition) {
+				$('#app').css('background-position', 'center top -' + bgPosition + 'px');
+			}
+		});
+
 	</script>
 
 
@@ -47,6 +60,9 @@
 	<link href="https://fonts.googleapis.com/css?display=swap&family=Archivo:600,600italic,400,400italic"
 		rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="assets/main.css" />
+
+
+
 	<noscript>
 		<link rel="stylesheet" href="assets/noscript.css" />
 	</noscript>
@@ -54,33 +70,59 @@
 
 <body class="is-loading">
 
+
 	<!-- width 100% -->
-	<div class="hero">
-		<div class="title">
-			<h1><span>東京都立大学 インダストリアルアート学科/学域</span><span>オープンキャンパス2022</span></h1>
-			<ul id="icons04" class="style1 icons">
-				<li>
-					<a class="n01" href="https://domain.ext/path">
-						<svg>
-							<use xlink:href="assets/icons.svg#twitter"></use>
-						</svg>
-						<span class="label">Twitter</span>
-					</a>
-				</li>
-				<li>
-					<a class="n02" href="https://domain.ext/path/">
-						<svg>
-							<use xlink:href="assets/icons.svg#instagram"></use>
-						</svg>
-						<span class="label">Instagram</span>
-					</a>
-				</li>
 
-			</ul>
-		</div>
-		<div class="mv"></div>
+	<div class="line-rect">
+
 	</div>
+	<div class="hero-wrapper">
+		<div class="hero parallax">
+			<div class="title">
+				<h1>
+					<span class="ja">東京都立大学</span>
+					<span class="ja">インダストリアルアート学科/学域</span>
+					<span class="en">OPEN</span>
+					<span class="en">CAMPUS</span>
+					<span>2022</span>
+				</h1>
+				<ul id="icons04" class="style1 icons">
+					<li>
+						<a class="n01" href="https://twitter.com/ia_sd_tmu">
+							<svg>
+								<use xlink:href="assets/icons.svg#twitter"></use>
+							</svg>
+							<span class="label">Twitter</span>
+						</a>
+					</li>
+					<li>
+						<a class="n02" href="https://www.instagram.com/ia.sd.tmu/">
+							<svg>
+								<use xlink:href="assets/icons.svg#instagram"></use>
+							</svg>
+							<span class="label">Instagram</span>
+						</a>
+					</li>
 
+				</ul>
+
+				<div class="info">
+					<p class="date">2022.07.17.SUN</p>
+					<p class="time">10:00-17:00</p>
+					<p class="location">東京都立大学日野キャンパス</p>
+					<div class="location-data">
+						<p class="address">東京都日野市旭ヶ丘6-6</p>
+						<a
+							href="https://www.google.com/maps/place/%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E5%A4%A7%E5%AD%A6+%E6%97%A5%E9%87%8E%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9/@35.661579,139.366468,16z/data=!4m5!3m4!1s0x0:0x74b7f28cd003b142!8m2!3d35.6615787!4d139.3664679?hl=ja">
+							Googleマップ<img src="./assets/images/external-link.svg" alt="外部リンク">
+					</div>
+					</a>
+				</div>
+
+			</div>
+			<!--<div class="mv"></div>-->
+		</div>
+	</div>
 
 	<div id="wrapper">
 		<div id="main">
@@ -115,13 +157,13 @@
 					<div class="wrapper">
 
 						<div class="inner" data-onvisible-trigger="1">
-							<h2 class="style2">各スタジオ紹介</h2>
+							<h2 class="style2">スタジオ紹介</h2>
 
 							<div class="style1 image full" data-position="center">
 								<span class="frame"><img src="assets/images/studio.jpg" alt="" /></span>
 							</div>
 
-							<p class="style1">インダストリアルアート学科は「プロダクトデザイン」と「メディアアート」の2つのコア・分野を柱に、12のスタジオで構成されています。
+							<p class="style1">インダストリアルアート学科は「プロダクトデザイン」と「メディアアート」の2つのコア・分野を柱に、12のスタジオ（研究室）で構成されています。
 							</p>
 
 							<ul id="buttons01" class="style1 buttons">
@@ -206,7 +248,7 @@
 								<li>
 									<a href="https://industrial-art.sd.tmu.ac.jp/faq.html" class="button n01"><svg>
 											<use xlink:href="assets/icons.svg#arrow-right"></use>
-										</svg><span class="label">よくある質問へ</span></a>
+										</svg><span class="label">よくある質問をみる</span></a>
 								</li>
 							</ul>
 						</div>
