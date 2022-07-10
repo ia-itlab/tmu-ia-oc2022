@@ -3,38 +3,9 @@
 :root {
     /* Color
     -------------------------------------- */
-    --color-gray-0: #141414;
-    --color-gray-1: #444;
-    --color-gray-2: #666;
-    --color-gray-3: #999;
-    --color-gray-4: #bbb;
-    --color-gray-5: #eee;
-    --color-gray-6: #f5f5f5;
-    --color-gray-7: #fff;
-    --color-gold: #68665e;
-    --color-gold-pale: #E7E6E2;
-
+  
 	--color-key:#00517E;
 	--color-key-light:#3c4951;
-
-    /* Fonts
-    -------------------------------------- */
-
-    /* Shadow
-    -------------------------------------- */
-    --shadow-top-fixed: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
-
-    /* margin
-    -------------------------------------- */
-    --width-max: 1408px;
-
-    --margin-side: 80px;
-    /*--margin-side-middle: 60px;
-    --margin-side-narrow: 40px;*/
-    --margin-side-fv: calc(((var(--width-max) - var(--margin-side) *2)/ 12) + var(--margin-side));
-    /*184px*/
-    --margin-top: 40px;
-
 }
 
 /*font sample
@@ -336,7 +307,7 @@ section{
 
 
 p{
-	font-size:0.875rem;
+	font-size:1rem;
 	margin:2em 0;
 	
 }
@@ -1051,7 +1022,7 @@ hr.style1:before {
 	margin-bottom:1em;
 }
 .hero .info .location-data p{
-	margin-right:0.4em;
+	margin-right:0.5em;
 	font-size:1rem;
 }
 
@@ -1082,9 +1053,12 @@ hr.style1:before {
 	position: relative;
 	display: inline-block;
 	text-decoration: none;
+	opacity:0.8;
 }
 
-
+.hero .info a:hover{
+	opacity:1;
+}
 .hero .info a::after {
 	position: absolute;
 	bottom: -1px;
@@ -1173,7 +1147,7 @@ footer p{
 @media (min-width:1600px) {
 .hero h1>span.en{
 
-   font-size:5.5vw;
+   font-size:4.2vw;
    margin:0.3em 0;
 }
 
@@ -1309,6 +1283,11 @@ background: linear-gradient(to left top,  #00527e3d,#00527eef);;
 }
 
 @media (max-width: 420px) {
+
+	p{
+		font-size:0.875rem;
+		
+	}
 	section{
 		margin:64px 0;
 	}
