@@ -261,6 +261,13 @@ body.is-instant:after {
 	z-index: 0;
 }
 
+
+span.marker {
+ 
+    background-color: #ff7;
+ 
+}
+
 h1, h2, h3, h4{
 	font-family:ryo-text-plusn, serif;
 	line-height:1.3;
