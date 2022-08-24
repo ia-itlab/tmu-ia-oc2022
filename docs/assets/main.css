@@ -301,7 +301,10 @@ h2:before{
 z-index:-1;
 }
 
-
+h3{
+	font-size:1.5rem;
+	margin:2em 0 0.5em;
+}
 
 h2>img{
 display:block;
@@ -1310,6 +1313,11 @@ background: linear-gradient(to left top,  #00527e3d,#00527eef);;
 	h2{
 		font-size:1.25rem;
 	}
+	h3{
+		font-size:1.125rem;
+		/*margin:2em 0 0.5em;*/
+	}
+	
 	.hero h1>span.ja{
 		font-size:1.25rem;
 		
